@@ -25,8 +25,18 @@ CI:
 Github workflow for unit tests.
 
 
+Directory Structure:
+db in top level
+data import folder
+error logging folder
+
+db backup folder
+data import compelte folder
+
+
 Readme:
 Add a lot more info.
 
 Other files:
 requirements.txt
+pandas
