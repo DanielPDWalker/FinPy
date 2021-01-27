@@ -1,0 +1,32 @@
+4 Jupyter Notebooks:
+
+Pipeline + Database Ingress
+    - Convert .csvs to dataframes
+    - Clean up data as needed. Rename columns, drop columns, reset index, format date.
+    - Load into sqlite3 local database
+Test plotting notebook
+    - Examples of plotting function use
+Dashboard
+Error checking/Logging/Testing notebook
+
+
+Plotting Functions
+    - Might need aditional utils?
+    - General plotting, allowing user to pass dataframes with specific dimentions to specific function?
+    - Custom title?
+    - Custom colors
+
+Testing:
+Unit Test Everything!
+Functional test jupyter notebook? < Look Into
+
+
+CI:
+Github workflow for unit tests.
+
+
+Readme:
+Add a lot more info.
+
+Other files:
+requirements.txt
