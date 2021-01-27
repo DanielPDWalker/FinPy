@@ -40,3 +40,9 @@ Add a lot more info.
 Other files:
 requirements.txt
 pandas
+
+
+
+BUGS:
+
+Check if importing rows exist?

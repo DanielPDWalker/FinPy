@@ -1,5 +1,5 @@
 __pycache__/*
 venv/
 .ipynb_checkpoints/
-*.csv
+data.csv
 finpy_database.db
