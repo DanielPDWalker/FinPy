@@ -20,7 +20,7 @@ class TestCsvImport(unittest.testcase):
             os.remove('{}{}'.format(csv_import.IMPORT_DIR, csv_file))
 
     def test_import_all_csvs(self):
-        csv_list = csv_import.import_all_csvs():
+        csv_list = csv_import.import_all_csvs()
         self.assertEqual(test_csv_list, csv_list,
                          'The csv lists should be the same.')
 
