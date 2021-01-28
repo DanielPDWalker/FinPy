@@ -26,12 +26,12 @@ Github workflow for unit tests.
 
 
 Directory Structure:
-db in top level
 data import folder
 error logging folder
-
+finpy folder for python files (functions)
+tests folder
 db backup folder
-data import compelte folder
+
 
 
 Readme:
