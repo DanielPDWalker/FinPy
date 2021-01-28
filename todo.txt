@@ -6,6 +6,7 @@ Pipeline + Database Ingress
     - Load into sqlite3 local database
 Test plotting notebook
     - Examples of plotting function use
+
 Dashboard
 Error checking/Logging/Testing notebook
 
@@ -26,12 +27,12 @@ Github workflow for unit tests.
 
 
 Directory Structure:
+db in top level
 data import folder
 error logging folder
-finpy folder for python files (functions)
-tests folder
-db backup folder
 
+db backup folder
+data import compelte folder
 
 
 Readme:
@@ -43,6 +44,6 @@ pandas
 
 
 
-BUGS:
 
-Check if importing rows exist?
+BUGS:
+Check data_imported folder when moving csvs over so you don't overwrite files with the same name.
