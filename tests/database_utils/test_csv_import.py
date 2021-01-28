@@ -1,27 +1,26 @@
 import unittest
 import os
-import finpy.data_cleaning.csv_import as csv_import
+import finpy.database_utils.csv_import as csv_import
 
 from shutil import copyfile
 
 
-class TestCsvImport(unittest.testcase):
+class TestCsvImport(unittest.TestCase):
 
     def setUp(self):
-        test_csv_list = ['test_data_one.csv',
-                         'test_data_two.csv',
-                         'test_incorrect_file.png']
-        for csv_file in test_csv_list:
-            copyfile('{}{}'.format('../test_data/', csv_file),
-                     '{}{}'.format(csv_import.IMPORT_DIR, csv_file))
+        self.test_csv_list = ['test_data_one.csv',
+                              'test_data_two.csv']
+        for csv_file in self.test_csv_list:
+            copyfile('{}{}'.format('./tests/test_data/', csv_file),
+                     '{}{}'.format('./data/data_to_import/', csv_file))
 
     def tearDown(self):
-        for csv_file in test_csv_list:
-            os.remove('{}{}'.format(csv_import.IMPORT_DIR, csv_file))
+        for csv_file in self.test_csv_list:
+            os.remove('{}{}'.format('./data/data_to_import/', csv_file))
 
     def test_import_all_csvs(self):
         csv_list = csv_import.import_all_csvs()
-        self.assertEqual(test_csv_list, csv_list,
+        self.assertEqual(self.test_csv_list, csv_list,
                          'The csv lists should be the same.')
 
 
