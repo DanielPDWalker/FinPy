@@ -4,3 +4,4 @@ venv/
 .ipynb_checkpoints/
 data.csv
 finpy_database.db
+data/data_imported
